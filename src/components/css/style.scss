@@ -1,0 +1,187 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  list-style: none;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ffffff;
+}
+body {
+  width: 100%;
+}
+.container {
+  width: 1140px;
+  margin: 0px auto;
+  .header {
+    width: 1110px;
+    padding: 48px 15px;
+    display: flex;
+    h1 {
+      font-size: 40px;
+      font-weight: 500;
+      color: #212529;
+      margin-bottom: 8px;
+    }
+  }
+  .form-control {
+    width: 700px;
+    padding: 0px 15px;
+    form {
+      padding: 3px;
+      border: 1px solid #ced4da;
+      border-radius: 10px;
+      input {
+        width: 672px;
+        font-size: 15px;
+        color: #212529;
+        line-height: 2.5;
+        padding: 0px 10px;
+        outline: none;
+        &:focus {
+          box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+          border-radius: 5px;
+          transition: .1s ease;
+        }
+      }
+    }
+  }
+  .form-search{
+    width: 300px;
+    padding: 0px 15px;
+    form {
+      padding: 3px;
+      border: 1px solid #ced4da;
+      border-radius: 10px;
+      input {
+        width: 272px;
+        font-size: 15px;
+        color: #212529;
+        line-height: 2.0;
+        padding: 0px 10px;
+        outline: none;
+        &:focus {
+          box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+          border-radius: 5px;
+          transition: .1s ease;
+        }
+      }
+    }
+  }
+  .form-filter{
+    width: 80px;
+    height: 30px;
+    margin: 0px 20px 0px 0px;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    color:#212529;
+    outline: none;
+    overflow: hidden;
+  }
+  .btn-del{
+    width: 575px;
+    height: 30px;
+    margin: 10px 0px;
+    p{
+      float: right;
+      width: 90px;
+      text-align: center;
+      color: #ffffff;
+      font-size: 14px;
+      line-height: 30px;
+      background-color: #ff0000;
+      border-radius: 10px;
+      cursor: pointer;
+      &:hover{
+        box-shadow: 0 0 5px #212529;
+      }
+    }
+  }
+
+  .list-element {
+    padding: 0px 15px 30px 15px;
+    position: relative;
+    li {
+      width: 510px;
+      margin: 5px 0px 0px 0px;
+      padding: 0px 25px;
+      border-radius: 10px;
+      border: 1px solid #ced4da;
+      display: flex;
+      justify-content: space-between;
+      .Item{
+        width: 380px;
+        font-size: 14px;
+        color: #212529;
+        line-height: 2.5;
+        text-align: center;
+        border-radius: 10px;
+        outline: none;
+        &:focus {
+          box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+          transition: .1s ease;
+          }
+      }
+      button{
+        margin: 2px 0px;
+        width: 380px;
+        height: 40px;
+        border-radius: 10px;
+        outline: none;
+      }
+      .form-check{
+        .form-check-input{
+          width: 20px;
+          margin: 15px 0px;
+          transform: scale(1.2);
+        }
+      }
+      .btn-icon-list {
+        display: flex;
+        justify-content: space-between;
+        i {
+          padding: 10px;
+          border-radius: 5px;
+          font-size: 15px;
+        }
+        .btn-icon-edit {
+          width: 15px;
+          height: 15px;
+          margin: 5px 0px;
+          color: #007bff;
+          &:hover {
+            transition: all 0.2s ease;
+            color: #ffffff;
+            background-color: #007bff;
+          }
+        }
+        .btn-icon-remove {
+          width: 15px;
+          height: 15px;
+          margin: 5px 0px;
+          color: #de3545;
+          &:hover {
+            transition: all 0.2s ease;
+            color: #ffffff;
+            background-color: #de3545;
+          }
+        }
+      }
+      input {
+        width: 400px;
+        margin: 5px 0px;
+        text-align: left;
+        border-radius: 5px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+}
+.completed {
+  text-decoration: line-through #ff0000;
+  background-color: #90f184;
+}
+// .focusInput {
+//   border: 3px solid #bfdeff;
+//   transition: 0.1s ease;
+// }
